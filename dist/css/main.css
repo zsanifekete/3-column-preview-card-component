@@ -10,13 +10,13 @@
 }
 
 body {
+  align-items: center;
+  background: hsl(0, 0%, 95%);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   min-height: 100vh;
   overflow-x: hidden;
-  background: hsl(0, 0%, 95%);
   -ms-overflow-style: none; /* for Internet Explorer and Edge*/
   scrollbar-width: none; /* for Firefox */
 }
@@ -25,21 +25,22 @@ body::-webkit-scrollbar {
 }
 
 .card {
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -moz-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  -moz-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   max-width: 87%;
-  border-radius: 0.5rem;
 }
 @media (min-width: 64rem) {
   .card {
     flex-direction: row;
-    width: 80%;
     max-width: 57.5rem;
+    position: relative;
+    width: 80%;
   }
 }
 
@@ -110,28 +111,28 @@ body::-webkit-scrollbar {
   }
 }
 .container__title {
-  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 2.44rem;
   font-weight: 700;
-  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
 }
 .container__description {
+  color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.9375rem;
   font-weight: 400;
-  color: hsla(0, 0%, 100%, 0.75);
   line-height: 1.6rem;
   padding-top: 1.5rem;
 }
 .container__btn {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 2.2rem;
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.9375rem;
   font-weight: 400;
   padding: 0.85rem 1.8rem;
-  background-color: hsl(0, 0%, 95%);
-  border-radius: 2.2rem;
-  border: 2px solid hsl(0, 0%, 95%);
 }
 .container__btn:hover {
   color: hsl(0, 0%, 95%);
@@ -139,19 +140,25 @@ body::-webkit-scrollbar {
 }
 
 .attribution__container {
+  color: hsl(184, 100%, 22%);
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: hsl(184, 100%, 22%);
+  line-height: 1.5rem;
   margin: 1rem;
   text-align: center;
-  line-height: 1.5rem;
+}
+@media (min-width: 64rem) {
+  .attribution__container {
+    bottom: 0;
+    position: absolute;
+  }
 }
 .attribution__link:link, .attribution__link:visited {
-  text-decoration: none;
+  border-radius: 0.2rem;
   color: hsl(31, 77%, 52%);
   padding: 0.3rem;
-  border-radius: 0.2rem;
+  text-decoration: none;
 }
 .attribution__link:hover {
   background-color: hsl(184, 100%, 22%);

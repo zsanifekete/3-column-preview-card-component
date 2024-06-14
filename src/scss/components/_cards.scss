@@ -15,6 +15,7 @@
     @media (min-width: vars.$breakpoint-desktop) {
         flex-direction: row;
         max-width: 57.5rem;
+        position: relative;
         width: 80%;
     }
 }

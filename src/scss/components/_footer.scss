@@ -9,6 +9,11 @@
         line-height: 1.5rem;
         margin: 1rem;
         text-align: center;
+
+        @media (min-width: vars.$breakpoint-desktop) {
+            bottom: 0;
+            position: absolute;
+        }
     }
 
     &__link {
