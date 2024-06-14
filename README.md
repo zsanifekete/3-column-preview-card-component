@@ -6,11 +6,11 @@
 
 <div align="center">
     <h3>
-        <a href="path/to/live-site" target="_blank" title="Live Site">Live</a>
+        <a href="https://3-column-preview-card-component-zsani.netlify.app/" target="_blank" title="Live Site">Live</a>
         <span> | </span>
-        <a href="path/to/solution" target="_blank" title="Solution">Solution</a>
+        <a href="https://www.frontendmentor.io/solutions/3-column-preview-card-component-SO30wYYobb" target="_blank" title="Solution">Solution</a>
         <span> | </span>
-        <a href="path/to/challenge" target="_blank" title="Challenge">Challenge</a>
+        <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-" target="_blank" title="Challenge">Challenge</a>
     </h3>
 </div>
 
