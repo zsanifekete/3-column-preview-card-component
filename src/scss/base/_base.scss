@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as vars;
+
+body {
+    align-items: center;
+    background: vars.$color-verylightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* for Internet Explorer and Edge*/
+    scrollbar-width: none; /* for Firefox */
+
+    &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari and Opera*/
+    }
+}

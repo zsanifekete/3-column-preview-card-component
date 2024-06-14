@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as vars;
+
+.attribution {
+    &__container {
+        color: vars.$color-darkcyan;
+        font-family: vars.$font-lexend-deca;
+        font-size: vars.$font-footer;
+        font-weight: nth(vars.$weight, 1);
+        line-height: 1.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            border-radius: 0.2rem;
+            color: vars.$color-brightorange;
+            padding: 0.3rem;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: vars.$color-bg-link;
+        }
+    }
+}

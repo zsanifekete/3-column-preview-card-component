@@ -1,0 +1,91 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins';
+
+.card {
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: vars.$shadow;
+    -moz-box-shadow: vars.$shadow;
+    -webkit-box-shadow: vars.$shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 87%;
+
+    @media (min-width: vars.$breakpoint-desktop) {
+        flex-direction: row;
+        max-width: 57.5rem;
+        width: 80%;
+    }
+}
+
+@include mixins.bg(vars.$colors);
+@include mixins.btn-text-color(vars.$colors); 
+@include mixins.btn-bg-color(vars.$colors); 
+
+.container {
+    padding: 3rem;
+
+    &--1 {
+        border-radius: 0.5rem 0.5rem 0 0;
+
+        @media (min-width: vars.$breakpoint-desktop) {
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+    }
+
+    &--3 {
+        border-radius: 0 0 0.5rem 0.5rem;
+
+        @media (min-width: vars.$breakpoint-desktop) {
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+    }
+
+    &__icon {
+        &-img {
+            width: 4rem;
+        }
+    }
+
+    &__content {
+        margin: 2rem 0 1.5rem 0;
+
+        @media (min-width: vars.$breakpoint-desktop) {
+            margin: 2.1rem 0 4.8rem 0;
+        }
+    }
+
+    &__title {
+        color: vars.$color-verylightgray;
+        font-family: vars.$font-big-shoulders-display;
+        font-size: vars.$font-h2;
+        font-weight: nth(vars.$weight, 2);
+        text-transform: uppercase;
+    }
+
+    &__description {
+        color: vars.$color-transparentwhite;
+        font-family: vars.$font-lexend-deca;
+        font-size: vars.$font-p;
+        font-weight: nth(vars.$weight, 1);
+        line-height: 1.6rem;
+        padding-top: 1.5rem;
+    }
+
+    
+    &__btn {
+        background-color: vars.$color-verylightgray;
+        border: 2px solid vars.$color-verylightgray;
+        border-radius: 2.2rem;
+        font-family: vars.$font-lexend-deca;
+        font-size: vars.$font-p;
+        font-weight: nth(vars.$weight, 1);
+        padding: 0.85rem 1.8rem;
+
+        &:hover {
+            color: vars.$color-verylightgray;
+            cursor: pointer;
+        }
+    }
+}

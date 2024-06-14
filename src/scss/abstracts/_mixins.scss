@@ -1,0 +1,30 @@
+@use 'sass:map';
+
+@mixin bg($colors) {
+    $container: 1, 2, 3;
+    @each $i in $container {
+        .container--#{$i} {
+            background-color: map-get($colors, "color--#{$i}");
+        }
+    }
+}
+
+@mixin btn-text-color($colors) {
+    $btn: 1, 2, 3;
+    @each $i in $btn {
+        .container__btn--#{$i} {
+            color: map-get($colors, "color--#{$i}");
+        }
+    }
+}
+
+@mixin btn-bg-color($colors) {
+    $btn: 1, 2, 3;
+    @each $i in $btn {
+        .container__btn--#{$i}:hover {
+            background-color: map-get($colors, "color--#{$i}");
+        }
+    }
+}
+
+

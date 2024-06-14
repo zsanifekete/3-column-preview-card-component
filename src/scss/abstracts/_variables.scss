@@ -1,0 +1,33 @@
+@use 'sass:map';
+@use 'sass:list';
+
+// COLORS
+$color-brightorange: hsl(31, 77%, 52%);
+$color-darkcyan: hsl(184, 100%, 22%);
+$color-verydarkcyan: hsl(179, 100%, 13%);
+$color-transparentwhite: hsla(0, 0%, 100%, 0.75);
+$color-verylightgray: hsl(0, 0%, 95%);
+$color-bg-link: hsl(184, 100%, 22%);
+
+$colors: (
+    "color--1": $color-brightorange,
+    "color--2": $color-darkcyan,
+    "color--3": $color-verydarkcyan
+);
+
+// FONTS
+$font-lexend-deca: 'Lexend Deca', sans-serif;
+$font-big-shoulders-display: 'Big Shoulders Display', sans-serif;
+
+$font-p: 0.9375rem;
+$font-h2: 2.44rem;
+$font-footer: 0.8rem;
+
+$weight: 400 700;
+
+// MEDIA QUERY
+$shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+// MEDIA QUERY
+$breakpoint-desktop: 64rem;
+$breakpoint-mobile: 23rem;

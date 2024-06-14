@@ -1,0 +1,7 @@
+@use 'abstracts/variables' as vars;
+@use 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'components/cards';
+@import 'components/footer';
